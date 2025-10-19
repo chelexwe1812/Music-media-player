@@ -1,0 +1,99 @@
+body {
+  width: 400px;
+  height: 140px;
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+#player-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#ytm-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 16px;
+  opacity: 0.5;
+  z-index: 10;
+}
+
+#album-art-container {
+  flex-shrink: 0;
+}
+
+#album-art {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  display: block;
+}
+
+#right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+  overflow: hidden;
+}
+
+#song-info {
+  text-align: left;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#song-title {
+  font-weight: bold;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#song-artist {
+  font-size: 14px;
+  color: #b3b3b3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#controls button {
+  border: none;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-symbols-outlined {
+  font-size: 36px;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+#play-pause-btn .material-symbols-outlined {
+  font-size: 48px;
+}
+
+#controls button:first-child {
+  padding-left: 0;
+}
